@@ -1,4 +1,4 @@
 #!/bin/sh
-python manage.py makemigrations
-python manage.py migrate
+python ./meera/manage.py makemigrations
+python ./meera/manage.py migrate
 exec "$@"
