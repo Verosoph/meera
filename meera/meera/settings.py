@@ -25,7 +25,7 @@ SECRET_KEY = '9&lhnwk0get9kx!c88zxhwi&gc%z5!_ici_#)^r3@(q%_fk0^k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['vps109.pfx-hosting.de']
 
 
 # Application definition
@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'meera.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'db',
+        'POST': 5432,
     }
 }
 
