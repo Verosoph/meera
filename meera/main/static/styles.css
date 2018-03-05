@@ -1,0 +1,45 @@
+.head{
+    height: 200px;
+}
+
+.title_text{
+    text-align: center;
+}
+
+.title_text_title{
+    font-size: 60px;
+}
+
+a{
+  color: white;
+}
+
+html {
+    height: 100%;
+  }
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+  }
+  
+main { 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+      } 
+  
+footer{
+    height: 100px;
+
+  }
+  
+header{
+    background-color: lightpink;
+  }
+
+.back{
+    padding: 0px 0px 0px 60px;
+}

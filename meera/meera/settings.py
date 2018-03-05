@@ -25,7 +25,11 @@ SECRET_KEY = '9&lhnwk0get9kx!c88zxhwi&gc%z5!_ici_#)^r3@(q%_fk0^k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vps109.pfx-hosting.de']
+## activate befor pushing to server
+
+#ALLOWED_HOSTS = ['vps109.pfx-hosting.de']
+ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -38,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'bootstrap3'
 ]
 
 MIDDLEWARE = [
@@ -74,16 +80,23 @@ WSGI_APPLICATION = 'meera.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
+## activate befor pushing to server
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'HOST': 'db',
+#         'POST': 5432,
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'HOST': 'db',
-        'POST': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
