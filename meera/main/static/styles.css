@@ -32,14 +32,15 @@ main {
       } 
   
 footer{
-    height: 100px;
+    height: 60px;
 
   }
   
 header{
-    background-color: lightpink;
+    height: 60px;
+    padding: 20px;    
   }
 
 .back{
-    padding: 0px 0px 0px 60px;
+    margin: 0px 0px 0px 30px;
 }
