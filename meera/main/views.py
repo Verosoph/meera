@@ -7,13 +7,17 @@ def index(request):
     return render(request, 'index.html', {'today':today})
 
 def thema1(request):
-    return render(request, 'thema1.html')
+    today = datetime.datetime.now()
+    return render(request, 'thema1.html', {'today':today})
 
 def thema2(request):
-    return render(request, 'thema2.html')
+    today = datetime.datetime.now()
+    return render(request, 'thema2.html', {'today':today})
 
 def thema3(request):
-    return render(request, 'thema3.html')
+    today = datetime.datetime.now()
+    return render(request, 'thema3.html', {'today':today})
 
 def thema4(request):
-    return render(request, 'thema4.html')
+    today = datetime.datetime.now()
+    return render(request, 'thema4.html', {'today':today})
